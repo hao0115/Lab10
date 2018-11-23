@@ -25,9 +25,6 @@ pbinom(4,10,0.5)
 
 # Question 2
 ```{r}
-# Since power indicates the ability for a test to reject null hypothesis when null hypothesis is wrong and t-test assumes that data follows a normal distriution, we can generate data without nomal distribution and calculate the fraction of rejecting null hypothesis in 10,000 simulations to obtain the power.
-
-# For exponential function, if random variable x follows exp(lambda), then the mean and standard deviation of x are both 1/lambda.
 
 power_t <- function(n, delta, mu0, sd, sig, s){
   set.seed(123)
